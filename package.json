@@ -1,0 +1,24 @@
+{
+  "name": "management-flota-auto",
+  "version": "1.0.0",
+  "description": "Sistem securizat de management flotă auto",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "node app.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.21.2",
+    "express-session": "^1.18.2",
+    "sqlite3": "^5.1.7"
+  },
+  "keywords": [
+    "flota",
+    "auto",
+    "management",
+    "nodejs"
+  ],
+  "author": "Alexandru Tirca",
+  "license": "MIT"
+}
