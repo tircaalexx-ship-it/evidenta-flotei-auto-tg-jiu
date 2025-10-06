@@ -185,24 +185,355 @@ function createDefaultUser() {
 // Adaugă date exemplu
 function addSampleData() {
     const sampleCars = [
-        { 
-            numar_inmatriculare: "GJ07ZR", 
-            marca: "BMW", 
-            model: "740XD", 
-            tip_combustibil: "diesel", 
-            an_fabricatie: 2018,
-            culoare: "Negru",
-            serie_sasiu: "WBA7E4100JGV38613",
-            kilometraj_curent: 152000
+         { 
+            numar_inmatriculare: "GJ17tZR", 
+            marca: "PEUGEOT", 
+            model: "EXPERT", 
+            tip_combustibil: "ELECTRIC", 
+            an_fabricatie: 2021,
+            culoare: "ALB",
+            serie_sasiu: "VF3V1ZKXZMZ083957",
+            kilometraj_curent: 40000
         },
         { 
-            numar_inmatriculare: "B123ABC", 
-            marca: "Volkswagen", 
-            model: "Transporter", 
+            numar_inmatriculare: "GJ19TZR", 
+            marca: "FORD", 
+            model: "TRANSIT", 
+            tip_combustibil: "diesel", 
+            an_fabricatie: 2016,
+            culoare: "Alb",
+            serie_sasiu: "WF0EXXTTREKM10084",
+            kilometraj_curent: 205220
+        },
+        { 
+            numar_inmatriculare: "GJ12TZR", 
+            marca: "FORD", 
+            model: "TRANSIT CUSTOM", 
+            tip_combustibil: "diesel", 
+            an_fabricatie: 2018,
+            culoare: "ALB",
+            serie_sasiu: "WF0YXXTTGYFJ64185",
+            kilometraj_curent: 317879
+        },
+        { 
+            numar_inmatriculare: "GJ15TZR", 
+            marca: "FORD", 
+            model: "TRANSIT", 
             tip_combustibil: "diesel", 
             an_fabricatie: 2022,
             culoare: "Alb",
-            kilometraj_curent: 45000
+            serie_sasiu: "WF0XXXTTGXGD24338",
+            kilometraj_curent: 312560
+        },
+        { 
+            numar_inmatriculare: "GJ09FAN", 
+            marca: "Volkswagen", 
+            model: "TRANSPORTER", 
+            tip_combustibil: "diesel", 
+            an_fabricatie: 2015,
+            culoare: "Alb",
+            serie_sasiu: "WV1ZZZ7HZEX009092",
+            kilometraj_curent: 154711
+        },
+        { 
+            numar_inmatriculare: "GJ39FAN", 
+            marca: "FORD", 
+            model: "TRANSIT CONECT", 
+            tip_combustibil: "diesel", 
+            an_fabricatie: 2008,
+            culoare: "Alb",
+            serie_sasiu: "WF0UXXTTPU8R31219",
+            kilometraj_curent: 132711
+        },
+        { 
+            numar_inmatriculare: "GJ16FAN", 
+            marca: "FORD", 
+            model: "TRANSIT", 
+            tip_combustibil: "diesel", 
+            an_fabricatie: 2014,
+            serie_sasiu: "WF0XXXTTFXBK52641",
+            culoare: "Alb",
+            kilometraj_curent: 287528
+        },
+        { 
+            numar_inmatriculare: "GJ39TZR", 
+            marca: "NISSAN", 
+            model: "NV-200", 
+            tip_combustibil: "ELECTRIC", 
+            an_fabricatie: 2022,
+            culoare: "Alb",
+            serie_sasiu: "VSKHAAME0U0629171",
+            kilometraj_curent: 47528
+        },
+        { 
+            numar_inmatriculare: "GJ11TZR", 
+            marca: "FORD", 
+            model: "TRANSIT", 
+            tip_combustibil: "diesel", 
+            an_fabricatie: 2014,
+            culoare: "Alb",
+            serie_sasiu: "WF0XXXBDFX7U42734",
+            kilometraj_curent: 371328
+        },
+        { 
+            numar_inmatriculare: "GJ43TZR", 
+            marca: "FORD", 
+            model: "TRANSIT", 
+            tip_combustibil: "electric", 
+            an_fabricatie: 2024,
+            culoare: "Alb",
+            serie_sasiu: "WF0EXXTTRBPP35230",
+            kilometraj_curent: 50000
+        },
+        { 
+            numar_inmatriculare: "GJ08TZR", 
+            marca: "FORD", 
+            model: "TRANSIT", 
+            tip_combustibil: "diesel", 
+            an_fabricatie: 2014,
+            culoare: "Alb",
+            serie_sasiu: "WF0XXXTTFXCC55230",
+            kilometraj_curent: 309909
+        },
+        { 
+            numar_inmatriculare: "GJ36TZR", 
+            marca: "FORD", 
+            model: "TRANSIT", 
+            tip_combustibil: "diesel", 
+            an_fabricatie: 2018,
+            culoare: "Alb",
+            serie_sasiu: "WF0YXXTTGYGS22985",
+            kilometraj_curent: 276632
+        },
+        { 
+            numar_inmatriculare: "GJ03TZR", 
+            marca: "RENAULT", 
+            model: "KANGOO", 
+            tip_combustibil: "electric", 
+            an_fabricatie: 2021,
+            culoare: "Alb",
+            serie_sasiu: "VF1FW000965992982",
+            kilometraj_curent: 276632
+        },
+        { 
+            numar_inmatriculare: "GJ35TZR", 
+            marca: "FORD", 
+            model: "TRANSIT", 
+            tip_combustibil: "diesel", 
+            an_fabricatie: 2021,
+            culoare: "Alb",
+            serie_sasiu: "WF0XXXTTGXJB02794",
+            kilometraj_curent: 319995
+        },
+        { 
+            numar_inmatriculare: "GJ30TZR", 
+            marca: "FORD", 
+            model: "TRANSIT", 
+            tip_combustibil: "diesel", 
+            an_fabricatie: 2016,
+            culoare: "Alb",
+            serie_sasiu: "WF0XXXTTGXEU43653",
+            kilometraj_curent: 381946
+        },
+        { 
+            numar_inmatriculare: "GJ44FAN", 
+            marca: "FORD", 
+            model: "TRANSIT", 
+            tip_combustibil: "diesel", 
+            an_fabricatie: 2016,
+            culoare: "Alb",
+            serie_sasiu: "WF0WXXTACWHB19129",
+            kilometraj_curent: 0
+        },
+        { 
+            numar_inmatriculare: "GJ21TZR", 
+            marca: "FORD", 
+            model: "TRANSIT", 
+            tip_combustibil: "diesel", 
+            an_fabricatie: 2018,
+            culoare: "Alb",
+            serie_sasiu: "WF0XXXTTFXDK82839",
+            kilometraj_curent: 334578
+        },
+        { 
+            numar_inmatriculare: "GJ46TZR", 
+            marca: "FORD", 
+            model: "TRANSIT", 
+            tip_combustibil: "electric", 
+            an_fabricatie: 2024,
+            culoare: "Alb",
+            serie_sasiu: "WF0EXXTTRBPM33213",
+            kilometraj_curent: 74524
+        },
+        { 
+            numar_inmatriculare: "GJ45TZR", 
+            marca: "RENAULT", 
+            model: "MAEVA", 
+            tip_combustibil: "ELECTRIC", 
+            an_fabricatie: 2022,
+            culoare: "Alb",
+            serie_sasiu: "VF1VAE00064162873",
+            kilometraj_curent:0
+        },
+        { 
+            numar_inmatriculare: "GJ44TZR", 
+            marca: "RENAULT", 
+            model: "ZOE", 
+            tip_combustibil: "ELECTRIC", 
+            an_fabricatie: 2019,
+            culoare: "Alb",
+            serie_sasiu: "VF1AGVYB055164402",
+            kilometraj_curent: 0
+        },
+        { 
+            numar_inmatriculare: "GJ14TZR", 
+            marca: "RENAULT", 
+            model: "KANGOO", 
+            tip_combustibil: "electric", 
+            an_fabricatie: 2019,
+            culoare: "Alb",
+            serie_sasiu: "VF1FW000265992984",
+            kilometraj_curent: 12345
+        },
+        { 
+            numar_inmatriculare: "GJ16TZR", 
+            marca: "RENAULT", 
+            model: "KANGOO", 
+            tip_combustibil: "electric", 
+            an_fabricatie: 2019,
+            culoare: "Alb",
+            serie_sasiu: "VF1FW000466092470",
+            kilometraj_curent: 200000
+        },
+        { 
+            numar_inmatriculare: "GJ25TZR", 
+            marca: "RENAULT", 
+            model: "KANGOO", 
+            tip_combustibil: "electric", 
+            an_fabricatie: 2019,
+            culoare: "Alb",
+            serie_sasiu: "VF1FW0ZHC47559358",
+            kilometraj_curent: 40198
+        },
+        { 
+            numar_inmatriculare: "GJ23TZR", 
+            marca: "RENAULT", 
+            model: "KANGOO", 
+            tip_combustibil: "electric", 
+            an_fabricatie: 2019,
+            culoare: "Alb",
+            serie_sasiu: "VF1FW000565992980",
+            kilometraj_curent: 40198
+        },
+        { 
+            numar_inmatriculare: "GJ37TZR", 
+            marca: "RENAULT", 
+            model: "KANGOO", 
+            tip_combustibil: "electric", 
+            an_fabricatie: 2019,
+            culoare: "Alb",
+            serie_sasiu: "VF1FW000065992983",
+            kilometraj_curent: 0
+        },
+        { 
+            numar_inmatriculare: "GJ42TZR", 
+            marca: "FORD", 
+            model: "TRANSIT", 
+            tip_combustibil: "diesel", 
+            an_fabricatie: 2019,
+            culoare: "Alb",
+            serie_sasiu: "WF0YXXTTGYJR56387",
+            kilometraj_curent: 183376
+        },
+        { 
+            numar_inmatriculare: "GJ31TZR", 
+            marca: "FORD", 
+            model: "TRANSIT", 
+            tip_combustibil: "diesel", 
+            an_fabricatie: 2019,
+            culoare: "Alb",
+            serie_sasiu: "WF0XXXTTGXJM72014",
+            kilometraj_curent: 224054
+        },
+        { 
+            numar_inmatriculare: "GJ33TZR", 
+            marca: "FORD", 
+            model: "TRANSIT", 
+            tip_combustibil: "diesel", 
+            an_fabricatie: 2019,
+            culoare: "Alb",
+            serie_sasiu: "WF0XXXTTGXGK89342",
+            kilometraj_curent: 329815
+        },
+        { 
+            numar_inmatriculare: "GJ22TZR", 
+            marca: "FORD", 
+            model: "TRANSIT", 
+            tip_combustibil: "diesel", 
+            an_fabricatie: 2019,
+            culoare: "Alb",
+            serie_sasiu: "WF0XXXTTGXHB59987",
+            kilometraj_curent: 165220
+        },
+        { 
+            numar_inmatriculare: "GJ13TZR", 
+            marca: "FORD", 
+            model: "TRANSIT CUSTOM", 
+            tip_combustibil: "diesel", 
+            an_fabricatie: 2019,
+            culoare: "Alb",
+            serie_sasiu: "WFOYXXTTGYEB84484",
+            kilometraj_curent: 402491
+        },
+        { 
+            numar_inmatriculare: "GJ04FAN", 
+            marca: "FORD", 
+            model: "TRANSIT", 
+            tip_combustibil: "diesel", 
+            an_fabricatie: 2019,
+            culoare: "Alb",
+            serie_sasiu: "WF0VXXGBFV1D1374",
+            kilometraj_curent: 538035
+        },
+        { 
+            numar_inmatriculare: "GJ23TZR", 
+            marca: "FORD", 
+            model: "TRANSIT", 
+            tip_combustibil: "diesel", 
+            an_fabricatie: 2015,
+            culoare: "Alb",
+            serie_sasiu: "WF0XXXTTFXCR86513",
+            kilometraj_curent: 373544
+        },
+        { 
+            numar_inmatriculare: "GJ41TZR", 
+            marca: "FORD", 
+            model: "TRANSIT", 
+            tip_combustibil: "diesel", 
+            an_fabricatie: 2019,
+            culoare: "Alb",
+            serie_sasiu: "WF0XXXTTGXJT01004",
+            kilometraj_curent: 376085
+        },
+        { 
+            numar_inmatriculare: "GJ64FAN", 
+            marca: "MERCEDES", 
+            model: "SPRINTER", 
+            tip_combustibil: "diesel", 
+            an_fabricatie: 2019,
+            culoare: "Alb",
+            serie_sasiu: "WDB906155GN682883",
+            kilometraj_curent: 329815
+        },
+        { 
+            numar_inmatriculare: "GJ18TZR", 
+            marca: "SUZUKY", 
+            model: "SWIFT", 
+            tip_combustibil: "benzina", 
+            an_fabricatie: 2019,
+            culoare: "ROSU",
+            serie_sasiu: "TSMMZC21S00362485",
+            kilometraj_curent: 0
         }
     ];
 
@@ -430,7 +761,7 @@ app.get('/login', (req, res) => {
     </head>
     <body>
         <div class="login-box">
-            <h2>Login</h2>
+            <h2>Management Flota Auto Fan Courier TG-Jiu</h2>
             <div class="error" id="errorMessage"></div>
             <form id="loginForm">
                 <input type="text" id="username" placeholder="Username" value="Tzrkalex" required>
@@ -461,11 +792,6 @@ app.get('/login', (req, res) => {
                     document.getElementById('errorMessage').textContent = 'Eroare de conexiune';
                 }
             });
-            
-            // Auto-login imediat
-            setTimeout(() => {
-                document.getElementById('loginForm').dispatchEvent(new Event('submit'));
-            }, 100);
         </script>
     </body>
     </html>
@@ -478,7 +804,7 @@ app.get('/', requireAuth, (req, res) => {
     <!DOCTYPE html>
     <html>
     <head>
-        <title>Management Flotă Auto</title>
+        <title>Management Flota Auto Fan Courier TG-Jiu</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
@@ -516,11 +842,12 @@ app.get('/', requireAuth, (req, res) => {
             .import-error { background: #f8d7da; color: #721c24; }
             .kilometraj-info { background: #e7f3ff; padding: 10px; border-radius: 5px; margin: 10px 0; }
             .csv-preview { max-height: 200px; overflow-y: auto; border: 1px solid #ddd; padding: 10px; margin: 10px 0; font-family: monospace; font-size: 12px; }
+            .action-buttons { display: flex; gap: 5px; }
         </style>
     </head>
     <body>
         <div class="header">
-            <h1>🚗 Management Flotă Auto - SISTEM COMPLET</h1>
+            <h1>🚗 Management Flota Auto Fan Courier TG-Jiu</h1>
             <p>Bun venit, ${req.session.user.nume}!</p>
             <button class="btn btn-danger" onclick="logout()">🚪 Delogare</button>
         </div>
@@ -719,6 +1046,7 @@ app.get('/', requireAuth, (req, res) => {
                 <h2>⛽ Adaugă Alimentare</h2>
                 <form id="form-alimentare">
                     <input type="hidden" id="alimentare-masina-id">
+                    <input type="hidden" id="alimentare-id">
                     <div class="form-group">
                         <label>Data și Ora</label>
                         <input type="datetime-local" id="alimentare-data" required>
@@ -852,6 +1180,7 @@ app.get('/', requireAuth, (req, res) => {
 
         <script>
             let masini = [];
+            let alimentariCurente = [];
             
             // Funcții tab
             function showTab(tabName) {
@@ -956,7 +1285,7 @@ app.get('/', requireAuth, (req, res) => {
                 }
             }
             
-            // Funcții alimentări
+            // ==================== FUNCȚII ALIMENTĂRI ÎMBUNĂTĂȚITE ====================
             function loadAlimentariMasina() {
                 const masinaId = document.getElementById('select-masina-alimentare').value;
                 if (!masinaId) return;
@@ -966,16 +1295,16 @@ app.get('/', requireAuth, (req, res) => {
                 fetch(\`/api/masini/\${masinaId}/alimentari\`)
                 .then(r => r.json())
                 .then(data => {
+                    alimentariCurente = data.alimentari || [];
                     const container = document.getElementById('alimentari-content');
-                    const alimentari = data.alimentari || [];
                     
-                    if (alimentari.length === 0) {
+                    if (alimentariCurente.length === 0) {
                         container.innerHTML = '<p>Nu există alimentări pentru această mașină.</p>';
                         return;
                     }
                     
-                    let html = '<table class="table"><tr><th>Data</th><th>Cantitate</th><th>Cost</th><th>KM</th><th>Consum</th><th>Locație</th></tr>';
-                    alimentari.forEach(a => {
+                    let html = '<table class="table"><tr><th>Data</th><th>Cantitate</th><th>Cost</th><th>KM</th><th>Consum</th><th>Locație</th><th>Acțiuni</th></tr>';
+                    alimentariCurente.forEach(a => {
                         html += \`<tr>
                             <td>\${new Date(a.data_alimentare).toLocaleDateString()}</td>
                             <td>\${a.cantitate_litri}L</td>
@@ -983,6 +1312,10 @@ app.get('/', requireAuth, (req, res) => {
                             <td>\${a.km_curent}</td>
                             <td>\${a.consum_mediu || '-'}L/100km</td>
                             <td>\${a.locatie || '-'}</td>
+                            <td class="action-buttons">
+                                <button class="btn btn-warning" onclick="editAlimentare(\${a.id})" title="Editează">✏️</button>
+                                <button class="btn btn-danger" onclick="deleteAlimentare(\${a.id})" title="Șterge">🗑️</button>
+                            </td>
                         </tr>\`;
                     });
                     html += '</table>';
@@ -996,6 +1329,11 @@ app.get('/', requireAuth, (req, res) => {
                     alert('Selectează mai întâi o mașină!');
                     return;
                 }
+                
+                // Resetează formularul pentru adăugare nouă
+                document.getElementById('form-alimentare').reset();
+                document.getElementById('alimentare-id').value = '';
+                
                 document.getElementById('modalAlimentare').style.display = 'block';
                 document.getElementById('alimentare-data').value = new Date().toISOString().slice(0, 16);
                 
@@ -1004,6 +1342,49 @@ app.get('/', requireAuth, (req, res) => {
                 if (masina) {
                     document.getElementById('alimentare-km').value = masina.kilometraj_curent;
                 }
+            }
+            
+            function editAlimentare(alimentareId) {
+                const alimentare = alimentariCurente.find(a => a.id == alimentareId);
+                if (!alimentare) {
+                    alert('Alimentarea nu a fost găsită!');
+                    return;
+                }
+                
+                // Completează formularul cu datele existente
+                document.getElementById('alimentare-id').value = alimentare.id;
+                document.getElementById('alimentare-masina-id').value = document.getElementById('select-masina-alimentare').value;
+                document.getElementById('alimentare-data').value = alimentare.data_alimentare.replace(' ', 'T').substring(0, 16);
+                document.getElementById('alimentare-cantitate').value = alimentare.cantitate_litri;
+                document.getElementById('alimentare-cost').value = alimentare.cost_total;
+                document.getElementById('alimentare-km').value = alimentare.km_curent;
+                document.getElementById('alimentare-pret').value = alimentare.pret_per_litru || '';
+                document.getElementById('alimentare-locatie').value = alimentare.locatie || '';
+                document.getElementById('alimentare-factura').value = alimentare.numar_factura || '';
+                
+                document.getElementById('modalAlimentare').style.display = 'block';
+            }
+            
+            function deleteAlimentare(alimentareId) {
+                if (!confirm('Sigur vrei să ștergi această alimentare?')) {
+                    return;
+                }
+                
+                fetch(\`/api/alimentari/\${alimentareId}\`, { 
+                    method: 'DELETE' 
+                })
+                .then(r => r.json())
+                .then(data => {
+                    if (data.success) {
+                        loadAlimentariMasina();
+                        alert('Alimentare ștearsă cu succes!');
+                    } else {
+                        alert('Eroare la ștergere: ' + data.error);
+                    }
+                })
+                .catch(error => {
+                    alert('Eroare la ștergere: ' + error.message);
+                });
             }
             
             // Funcții revizii
@@ -1404,6 +1785,9 @@ app.get('/', requireAuth, (req, res) => {
                 // Form alimentare
                 document.getElementById('form-alimentare').addEventListener('submit', function(e) {
                     e.preventDefault();
+                    const alimentareId = document.getElementById('alimentare-id').value;
+                    const masinaId = document.getElementById('alimentare-masina-id').value;
+                    
                     const alimentare = {
                         data_alimentare: document.getElementById('alimentare-data').value,
                         cantitate_litri: parseFloat(document.getElementById('alimentare-cantitate').value),
@@ -1414,10 +1798,17 @@ app.get('/', requireAuth, (req, res) => {
                         numar_factura: document.getElementById('alimentare-factura').value
                     };
                     
-                    const masinaId = document.getElementById('alimentare-masina-id').value;
+                    let url = \`/api/masini/\${masinaId}/alimentari\`;
+                    let method = 'POST';
                     
-                    fetch(\`/api/masini/\${masinaId}/alimentari\`, {
-                        method: 'POST',
+                    // Dacă există ID, înseamnă că edităm o alimentare existentă
+                    if (alimentareId) {
+                        url = \`/api/alimentari/\${alimentareId}\`;
+                        method = 'PUT';
+                    }
+                    
+                    fetch(url, {
+                        method: method,
                         headers: {'Content-Type': 'application/json'},
                         body: JSON.stringify(alimentare)
                     })
@@ -1427,7 +1818,7 @@ app.get('/', requireAuth, (req, res) => {
                             closeModal('modalAlimentare');
                             loadAlimentariMasina();
                             loadMasini(); // Reîncarcă pentru actualizare kilometraj
-                            alert('Alimentare adăugată! Consum: ' + data.consum_mediu + 'L/100km');
+                            alert(alimentareId ? 'Alimentare actualizată cu succes!' : 'Alimentare adăugată! Consum: ' + data.consum_mediu + 'L/100km');
                         } else {
                             alert('Eroare: ' + data.error);
                         }
@@ -1714,6 +2105,76 @@ app.post('/api/masini/:id/alimentari', requireAuth, (req, res) => {
     });
 });
 
+// ==================== RUTE NOI PENTRU EDITARE/ȘTERGERE ALIMENTĂRI ====================
+app.put('/api/alimentari/:id', requireAuth, (req, res) => {
+    const alimentareId = req.params.id;
+    const { data_alimentare, cantitate_litri, cost_total, pret_per_litru, km_curent, locatie, numar_factura } = req.body;
+    
+    if (!cantitate_litri || !cost_total || !km_curent) {
+        return res.status(400).json({ error: 'Cantitate, cost și kilometraj sunt obligatorii' });
+    }
+    
+    // Obține mașina asociată alimentării pentru a calcula consumul
+    db.get(
+        'SELECT masina_id FROM alimentari WHERE id = ?',
+        [alimentareId],
+        (err, row) => {
+            if (err) {
+                res.status(500).json({ error: err.message });
+                return;
+            }
+            
+            if (!row) {
+                return res.status(404).json({ error: 'Alimentarea nu a fost găsită' });
+            }
+            
+            const masinaId = row.masina_id;
+            
+            calculeazaConsumSiKm(masinaId, km_curent, cantitate_litri, (kmParcursi, consumMediu) => {
+                
+                db.run(
+                    `UPDATE alimentari SET 
+                     data_alimentare = ?, cantitate_litri = ?, cost_total = ?, pret_per_litru = ?, 
+                     km_curent = ?, km_parcursi = ?, consum_mediu = ?, locatie = ?, numar_factura = ?
+                     WHERE id = ?`,
+                    [data_alimentare, cantitate_litri, cost_total, pret_per_litru, km_curent, kmParcursi, consumMediu, locatie, numar_factura, alimentareId],
+                    function(err) {
+                        if (err) {
+                            res.status(500).json({ error: err.message });
+                            return;
+                        }
+                        
+                        // Actualizează kilometrajul mașinii dacă este mai mare
+                        actualizeazaKilometrajMasina(masinaId, km_curent);
+                        
+                        res.json({ 
+                            success: true,
+                            message: 'Alimentare actualizată cu succes!',
+                            consum_mediu: consumMediu,
+                            km_parcursi: kmParcursi
+                        });
+                    }
+                );
+            });
+        }
+    );
+});
+
+app.delete('/api/alimentari/:id', requireAuth, (req, res) => {
+    const alimentareId = req.params.id;
+    
+    db.run('DELETE FROM alimentari WHERE id = ?', [alimentareId], function(err) {
+        if (err) {
+            res.status(500).json({ error: err.message });
+            return;
+        }
+        res.json({ 
+            success: true,
+            message: 'Alimentare ștearsă cu succes!'
+        });
+    });
+});
+
 // Rute revizii
 app.get('/api/masini/:id/revizii', requireAuth, (req, res) => {
     const masinaId = req.params.id;
@@ -1982,6 +2443,7 @@ app.listen(PORT, '0.0.0.0', () => {
     console.log('🔐 User: Tzrkalex');
     console.log('🔑 Parola: Ro27821091');
     console.log('💾 Baza de date: :memory: (online)');
-    console.log('🔄 Sincronizare OSCAR: ACTIVATĂ (cu procesare CSV)');
+    console.log('🔄 Sincronizare OSCAR: ACTIVATĂ');
+    console.log('✏️ Editare/Ștergere Alimentări: ACTIVATĂ');
     console.log('🚀 ========================================');
 });
